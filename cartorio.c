@@ -111,6 +111,7 @@ int main ()  //parênteses vieram por ela ser uma função
 	  printf ("\t 1-registrar nomes");  //o \t faz um espaçamento de parágrafo
 	  printf ("\t 2-consultar nomes");
 	  printf ("\t 3-deletar nomes");
+	  printf ("\t 4-fechar o sistema");
 	  printf ("\n\n Opção:");
 	
 	  scanf ("%d", &opcao);  //scanf escaneia o que o user coloca -- %d armazena a  variável do tipo inteira
@@ -129,6 +130,10 @@ int main ()  //parênteses vieram por ela ser uma função
 	    
 	    case 3:
 	    deletar();
+	    break;
+	    
+	    case 4:
+	    return 0;
 	    break;
 	    
 	    default:
